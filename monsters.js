@@ -6,7 +6,12 @@ const aliveM = document.getElementById('aliveMonst')
 const transitioning = document.getElementById('transitionImg')
 const framing = document.getElementById('frameImg')
 const transformer = document.getElementById('transformImg')
+const propertyM = document.getElementById('propMonst')
+// const prop1 = document.getElementById('property1')
+// const prop2 = document.getElementById('property2')
+// const prop3 = document.getElementById('property3')
 
+propertyM.style.opacity = '0%'
 durationM.style.opacity = '0%'
 delayM.style.opacity = '0%'
 timingM.style.opacity = '0%'
@@ -15,7 +20,9 @@ aliveM.style.opacity = '0%'
 transitioning.style.opacity = '0%'
 framing.style.opacity = '0%'
 transformer.style.opacity = '0%'
-
+// prop1.style.opacity = '0%'
+// prop2.style.opacity = '0%'
+// prop3.style.opacity = '0%'
 
 //ANIMATE THE MONSTER
 const thunder = document.getElementById("thunder");
@@ -43,6 +50,7 @@ const makeItAlive = function () {
 // BASIC TRANSFORMS//
 function transform(param) {
   transitioning.style.opacity = '0%'
+  propertyM.style.opacity = '0%'
   framing.style.opacity = '0%'
   transformer.style.opacity = '0%'
   durationM.style.opacity = '0%'
@@ -72,6 +80,7 @@ function transform(param) {
 //TRANSITIONS//
 function duration() {
   transitioning.style.opacity = '0%'
+  propertyM.style.opacity = '0%'
   framing.style.opacity = '0%'
   transformer.style.opacity = '0%'
   durationM.style.opacity = '100%'
@@ -88,6 +97,7 @@ function duration() {
 
 function delay() {
   transitioning.style.opacity = '0%'
+  propertyM.style.opacity = '0%'
   framing.style.opacity = '0%'
   transformer.style.opacity = '0%'
   durationM.style.opacity = '0%'
@@ -105,6 +115,7 @@ function delay() {
 function timing() {
   transitioning.style.opacity = '0%'
   framing.style.opacity = '0%'
+  propertyM.style.opacity = '0%'
   transformer.style.opacity = '0%'
   durationM.style.opacity = '0%'
   delayM.style.opacity = '0%'
@@ -116,6 +127,32 @@ function timing() {
   timingM.style.transitionTimingFunction = 'ease-in-out';
 
   setTimeout(() => backToNormal(timingM), 3500)
+}
+
+function transition() {
+  transitioning.style.opacity = '0%'
+  framing.style.opacity = '0%'
+  propertyM.style.opacity = '0%'
+  transformer.style.opacity = '0%'
+  durationM.style.opacity = '0%'
+  delayM.style.opacity = '0%'
+  timingM.style.opacity = '100%'
+  transformM.style.opacity = '0%'
+
+  timingM.style.transitionDuration = '2s';
+  timingM.style.transform = 'translate(500px)';
+  timingM.style.transitionTimingFunction = 'ease-in-out';
+}
+
+function props() {
+  transitioning.style.opacity = '0%'
+  framing.style.opacity = '0%'
+  propertyM.style.opacity = '100%'
+  transformer.style.opacity = '0%'
+  durationM.style.opacity = '0%'
+  delayM.style.opacity = '0%'
+  timingM.style.opacity = '0%'
+  transformM.style.opacity = '0%'
 }
 
 function backToNormal(monster) {
@@ -132,14 +169,18 @@ function backToNormal(monster) {
 codeStatus = false;
 
 function showCode(action) {
+  propertyM.style.opacity = '0%'
+  durationM.style.opacity = '0%'
+  delayM.style.opacity = '0%'
+  timingM.style.opacity = '0%'
+  transformM.style.opacity = '0%'
+  aliveM.style.opacity = '0%'
+  transitioning.style.opacity = '0%'
+  framing.style.opacity = '0%'
+  transformer.style.opacity = '0%'
 
   if (!codeStatus) {
     codeStatus = true;
-    transformM.style.opacity = '0%'
-    aliveM.style.opacity = '0%'
-    transitioning.style.opacity = '0%'
-    framing.style.opacity = '0%'
-    transformer.style.opacity = '0%'
     if (action === 'transform') {
       transitioning.style.opacity = '0%'
       framing.style.opacity = '0%'

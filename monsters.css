@@ -27,36 +27,53 @@ h2 {
   margin: 2%;
   z-index: 0;
   font-family: 'Libre Baskerville';
-    text-shadow: 3px 3px 3px #ababab;
+  text-shadow: 3px 3px 3px #ababab;
   font-style: italic;
 }
 
-figure{
+figure {
   height: auto;
   width: 70%;
   position: relative;
   z-index: 1;
 }
 
-.monsters, .codeEx{
+.regMonsters,
+.codeEx {
   margin: -35px 0 0 -35px;
   width: 400px;
   height: auto;
   object-fit: cover;
   object-position: bottom;
   position: fixed;
-  top: 33%; 
-  left: 40%
-}
-
-.monsters {
   top: 22%;
   left: 40%;
 }
 
-/* #main {
-  position: center;
-} */
+#propMonstSect {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  margin: -35px 0 0 135px;
+}
+
+#prop {
+  transition-property: width, height;
+  transition-duration: 2s;
+}
+
+#prop:hover {
+  width: 600px;
+  height: 600px;
+}
+
+.propMonsters {
+  margin: -35px 0 0 -35px;
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+  object-position: bottom;
+  position: flex;
+}
 
 .toolbar {
   background-color: #020e15;
@@ -67,7 +84,7 @@ figure{
 /* Dropdown Button */
 .dropbtn,
 button {
-    font-family: 'Creepster';
+  font-family: 'Creepster';
   background-color: #020e15;
   color: white;
   padding: 16px;
@@ -89,7 +106,7 @@ button:hover {
 .dropdown {
   position: relative;
   display: inline-block;
-    z-index: 2;
+  z-index: 2;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -116,7 +133,7 @@ button:hover {
 .dropdown-content a:hover {
   background-color: darkblue;
   color: white;
-    z-index: 2;
+  z-index: 2;
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
@@ -132,8 +149,8 @@ button:hover {
   }
 
   50% {
-  transform: translateY(0px);
-  opacity: 100%
+    transform: translateY(0px);
+    opacity: 100%
   }
 
   100% {
@@ -141,5 +158,3 @@ button:hover {
     opacity: 0%
   }
 }
-
-
