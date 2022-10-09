@@ -1,0 +1,87 @@
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>MonsterMan</title>
+  <link href='https://fonts.googleapis.com/css?family=Creepster' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+  <link rel="stylesheet" href="/monsters.css" media="screen">
+  <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+  <!-- TOOLBAR -->
+  <nav class="toolbar">
+
+    <!-- AUDIO -->
+    <button onclick="makeItAlive()">Animate the Monster</button>
+    <audio id="thunder" src="/media/thunder2.wav" loop></audio>
+    <audio id="aliveness" src="/media/Its alive.mp3"></audio>
+
+    <!-- BASIC TRANSFORMATIONS -->
+    <div class="dropdown">
+      <button onclick="basic()" class="dropbtn">Basic Transformations</button>
+      <div id="basicDrop" class="dropdown-content">
+        <a href="#" onclick="transform('skew')">Skew</a>
+        <a href="#" class="basic" onclick="transform('scale')">Scale</a>
+        <a href="#" onclick="transform('rotate')">Rotate</a>
+        <a href="#" onclick="transform('translate')">Translate</a>
+      </div>
+    </div>
+
+    <!-- TRANSITIONS -->
+    <div class="dropdown">
+      <button onclick="trans()" class="dropbtn">Transformations with Transitions</button>
+      <div id="transDrop" class="dropdown-content">
+        <a href="#" onclick="duration()">Using Skew With Transition Duration</a>
+        <a href="#" onclick="delay()">Rotate with Transition Delay</a>
+        <a href="#" onclick="timing()">Translate with Transition Timing</a>
+      </div>
+    </div>
+
+<!-- CODE -->
+    <div class="dropdown">
+    <button onclick="code()" class="dropbtn">Basic Code Examples</button>
+      <div id="codeDrop" class="dropdown-content">
+        <a href="#" onclick="showCode('frame')">Animate the Monster</a>
+        <a href="#" onclick="showCode('transform')">Basic Transformations</a>
+        <a href="#" onclick="showCode('transition')">Transformations with Transitions</a>
+      </div>
+      </div>
+
+  <h1>Frankenstein's Monster Animations</h1>
+  <div id="allMonsters">
+    <figure id="transformMonst">
+      <img class="monsters" id="transform" src="/media/frank.png">
+    </figure>
+    <figure id="durMonst">
+      <img class="monsters" id="duration" src="/media/frank.png">
+    </figure>
+    <figure id="delMonst">
+      <img class="monsters" id="delay" src="/media/frank.png">
+    </figure>
+    <figure id="timMonst">
+      <img class="monsters" id="timing" src="/media/frank.png">
+    </figure>
+    <figure id="aliveMonst">
+      <img class="monsters" id="alive" src="/media/frank.png">
+    </figure>
+  </div>
+
+  <div id="codeImgs">
+    <!-- <button id="x" onClick="closeCode()">x</button> -->
+    <figure class="coding" id="transformImg">
+      <img class="codeEx" id="transformImg" src="/media/basicTransform.png" />
+    </figure>
+    <figure class="coding">
+      <img class="codeEx" id="transitionImg" src="/media/transitions.png"/>
+    </figure>
+    <figure class="coding">
+     <img class="codeEx" id="frameImg" src="/media/frames.png"/>
+    </figure>
+  </div>
+
+  <script src="/monsters.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+html {
+  background: url(https://w0.peakpx.com/wallpaper/361/968/HD-wallpaper-spooky-castle-windows-lightning-bare-trees-dark-grey-black-trees-castle.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Creepster';
+  margin: 0 auto;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 300%;
+  letter-spacing: 3px;
+  margin: 2%;
+  z-index: 0;
+}
+
+figure{
+  height: auto;
+  width: 70%;
+  position: relative;
+  z-index: 1;
+}
+
+.monsters, .codeEx{
+  margin: -35px 0 0 -35px;
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+  object-position: bottom;
+  position: fixed;
+  top: 33%; 
+  left: 40%
+}
+
+.monsters {
+  top: 22%;
+  left: 40%;
+}
+
+/* #main {
+  position: center;
+} */
+
+.toolbar {
+  background-color: #020e15;
+  margin: -10px 0 -10px 0;
+  height: 50px
+}
+
+/* Dropdown Button */
+.dropbtn,
+button {
+  background-color: #020e15;
+  color: white;
+  padding: 16px;
+  font-size: medium;
+  width: 350px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Creepster';
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+button:hover {
+  background-color: white;
+  color: darkblue
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+    z-index: 2;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: darkblue;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  z-index: 2;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: darkblue;
+  color: white;
+    z-index: 2;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(300px);
+    opacity: 50%
+  }
+
+  50% {
+  transform: translateY(0px);
+  opacity: 100%
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 0%
+  }
+}
+
+
