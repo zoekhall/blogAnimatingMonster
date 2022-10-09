@@ -135,11 +135,13 @@ function showCode(action) {
 
   if (!codeStatus) {
     codeStatus = true;
+    durationM.style.opacity = '0%'
+    delayM.style.opacity = '0%'
+    timingM.style.opacity = '0%'
     transformM.style.opacity = '0%'
-    aliveM.style.opacity = '0%'
-    transitioning.style.opacity = '0%'
-    framing.style.opacity = '0%'
-    transformer.style.opacity = '0%'
+    // transitioning.style.opacity = '0%'
+    // framing.style.opacity = '0%'
+    // transformer.style.opacity = '0%'
     if (action === 'transform') {
       transitioning.style.opacity = '0%'
       framing.style.opacity = '0%'
