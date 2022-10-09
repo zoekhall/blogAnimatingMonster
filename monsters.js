@@ -60,19 +60,19 @@ function transform(param) {
 
   if (param === 'skew') {
     transformM.style.transform = "skew(40deg, 40deg)";
-    setTimeout(() => backToNormal(transformM), 1500)
+    setTimeout(() => backToNormal(transformM), 1000)
   } else if (param === 'scale') {
     transformM.style.transform = "scale(0.5, 0.5)";
-    setTimeout(() => backToNormal(transformM), 1500)
+    setTimeout(() => backToNormal(transformM), 1000)
 
   }
   else if (param === 'rotate') {
     transformM.style.transform = "rotate(60deg)";
-    setTimeout(() => backToNormal(transformM), 1500)
+    setTimeout(() => backToNormal(transformM), 1000)
 
   } else if (param === 'translate') {
     transformM.style.transform = "translate(-200px, -100px)";
-    setTimeout(() => backToNormal(transformM), 1500)
+    setTimeout(() => backToNormal(transformM), 1000)
 
   }
 }
@@ -91,7 +91,7 @@ function duration() {
   durationM.style.transitionDuration = '2s'
   durationM.style.transform = "skew(60deg, 60deg)";
 
-  setTimeout(() => backToNormal(durationM), 3500)
+  setTimeout(() => backToNormal(durationM), 3000)
 
 }
 
@@ -108,7 +108,7 @@ function delay() {
   delayM.style.transitionDelay = '2s'
   delayM.style.transform = "rotate(50deg)";
 
-  setTimeout(() => backToNormal(delayM), 3500)
+  setTimeout(() => backToNormal(delayM), 3000)
 
 }
 
@@ -126,7 +126,7 @@ function timing() {
   timingM.style.transform = 'translate(500px)';
   timingM.style.transitionTimingFunction = 'ease-in-out';
 
-  setTimeout(() => backToNormal(timingM), 3500)
+  setTimeout(() => backToNormal(timingM), 3000)
 }
 
 function transition() {
