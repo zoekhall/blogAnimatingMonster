@@ -11,18 +11,15 @@ const propertyM = document.getElementById('propMonst')
 // const prop2 = document.getElementById('property2')
 // const prop3 = document.getElementById('property3')
 
-propertyM.style.opacity = '0%'
-durationM.style.opacity = '0%'
-delayM.style.opacity = '0%'
-timingM.style.opacity = '0%'
-transformM.style.opacity = '0%'
-aliveM.style.opacity = '0%'
-transitioning.style.opacity = '0%'
-framing.style.opacity = '0%'
-transformer.style.opacity = '0%'
-// prop1.style.opacity = '0%'
-// prop2.style.opacity = '0%'
-// prop3.style.opacity = '0%'
+transformM.style.opacity = '0%';
+durationM.style.opacity = '0%';
+delayM.style.opacity = '0%';
+timingM.style.opacity = '0%';
+aliveM.style.opacity = '0%';
+transitioning.style.opacity = '0%';
+framing.style.opacity = '0%';
+transformer.style.opacity = '0%';
+propertyM.style.opacity = '0%';
 
 //ANIMATE THE MONSTER
 const thunder = document.getElementById("thunder");
