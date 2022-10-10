@@ -33,11 +33,6 @@ const makeItAlive = function () {
     aliveness.play();
     aliveM.style.left = '100px'
     aliveM.style.animation = "slide-in-bottom 8s linear both";
-
-  } else {
-    frankStatus = false;
-    thunder.volume = 0.00;
-    aliveness.volume = 0.00;
   }
 }
 
