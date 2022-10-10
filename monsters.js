@@ -7,9 +7,6 @@ const transitioning = document.getElementById('transitionImg')
 const framing = document.getElementById('frameImg')
 const transformer = document.getElementById('transformImg')
 const propertyM = document.getElementById('propMonst')
-// const prop1 = document.getElementById('property1')
-// const prop2 = document.getElementById('property2')
-// const prop3 = document.getElementById('property3')
 
 transformM.style.opacity = '0%';
 durationM.style.opacity = '0%';
@@ -46,14 +43,15 @@ const makeItAlive = function () {
 
 // BASIC TRANSFORMS//
 function transform(param) {
-  transitioning.style.opacity = '0%'
-  propertyM.style.opacity = '0%'
-  framing.style.opacity = '0%'
-  transformer.style.opacity = '0%'
-  durationM.style.opacity = '0%'
-  delayM.style.opacity = '0%'
-  timingM.style.opacity = '0%'
-  transformM.style.opacity = '100%'
+  transformM.style.opacity = '0%';
+  durationM.style.opacity = '0%';
+  delayM.style.opacity = '0%';
+  timingM.style.opacity = '0%';
+  aliveM.style.opacity = '0%';
+  transitioning.style.opacity = '0%';
+  framing.style.opacity = '0%';
+  transformer.style.opacity = '0%';
+  propertyM.style.opacity = '100%';
 
   if (param === 'skew') {
     transformM.style.transform = "skew(40deg, 40deg)";
@@ -76,14 +74,15 @@ function transform(param) {
 
 //TRANSITIONS//
 function duration() {
-  transitioning.style.opacity = '0%'
-  propertyM.style.opacity = '0%'
-  framing.style.opacity = '0%'
-  transformer.style.opacity = '0%'
-  durationM.style.opacity = '100%'
-  delayM.style.opacity = '0%'
-  timingM.style.opacity = '0%'
-  transformM.style.opacity = '0%'
+  transformM.style.opacity = '0%';
+  durationM.style.opacity = '100%';
+  delayM.style.opacity = '0%';
+  timingM.style.opacity = '0%';
+  aliveM.style.opacity = '0%';
+  transitioning.style.opacity = '0%';
+  framing.style.opacity = '0%';
+  transformer.style.opacity = '0%';
+  propertyM.style.opacity = '0%';
 
   durationM.style.transitionDuration = '2s'
   durationM.style.transform = "skew(60deg, 60deg)";
@@ -93,14 +92,15 @@ function duration() {
 }
 
 function delay() {
-  transitioning.style.opacity = '0%'
-  propertyM.style.opacity = '0%'
-  framing.style.opacity = '0%'
-  transformer.style.opacity = '0%'
-  durationM.style.opacity = '0%'
-  delayM.style.opacity = '100%'
-  timingM.style.opacity = '0%'
-  transformM.style.opacity = '0%'
+  transformM.style.opacity = '0%';
+  durationM.style.opacity = '0%';
+  delayM.style.opacity = '100%';
+  timingM.style.opacity = '0%';
+  aliveM.style.opacity = '0%';
+  transitioning.style.opacity = '0%';
+  framing.style.opacity = '0%';
+  transformer.style.opacity = '0%';
+  propertyM.style.opacity = '0%';
 
   delayM.style.transitionDelay = '2s'
   delayM.style.transform = "rotate(50deg)";
@@ -110,14 +110,15 @@ function delay() {
 }
 
 function timing() {
-  transitioning.style.opacity = '0%'
-  framing.style.opacity = '0%'
-  propertyM.style.opacity = '0%'
-  transformer.style.opacity = '0%'
-  durationM.style.opacity = '0%'
-  delayM.style.opacity = '0%'
-  timingM.style.opacity = '100%'
-  transformM.style.opacity = '0%'
+  transformM.style.opacity = '0%';
+  durationM.style.opacity = '0%';
+  delayM.style.opacity = '0%';
+  timingM.style.opacity = '100%';
+  aliveM.style.opacity = '0%';
+  transitioning.style.opacity = '0%';
+  framing.style.opacity = '0%';
+  transformer.style.opacity = '0%';
+  propertyM.style.opacity = '0%';
 
   timingM.style.transitionDuration = '2s';
   timingM.style.transform = 'translate(500px)';
@@ -127,14 +128,15 @@ function timing() {
 }
 
 function transition() {
-  transitioning.style.opacity = '0%'
-  framing.style.opacity = '0%'
-  propertyM.style.opacity = '0%'
-  transformer.style.opacity = '0%'
-  durationM.style.opacity = '0%'
-  delayM.style.opacity = '0%'
-  timingM.style.opacity = '100%'
-  transformM.style.opacity = '0%'
+  transformM.style.opacity = '0%';
+  durationM.style.opacity = '0%';
+  delayM.style.opacity = '0%';
+  timingM.style.opacity = '0%';
+  aliveM.style.opacity = '0%';
+  transitioning.style.opacity = '100%';
+  framing.style.opacity = '0%';
+  transformer.style.opacity = '0%';
+  propertyM.style.opacity = '0%';
 
   timingM.style.transitionDuration = '2s';
   timingM.style.transform = 'translate(500px)';
@@ -142,14 +144,15 @@ function transition() {
 }
 
 function props() {
-  transitioning.style.opacity = '0%'
-  framing.style.opacity = '0%'
-  propertyM.style.opacity = '100%'
-  transformer.style.opacity = '0%'
-  durationM.style.opacity = '0%'
-  delayM.style.opacity = '0%'
-  timingM.style.opacity = '0%'
-  transformM.style.opacity = '0%'
+  transformM.style.opacity = '0%';
+  durationM.style.opacity = '0%';
+  delayM.style.opacity = '0%';
+  timingM.style.opacity = '0%';
+  aliveM.style.opacity = '0%';
+  transitioning.style.opacity = '0%';
+  framing.style.opacity = '0%';
+  transformer.style.opacity = '0%';
+  propertyM.style.opacity = '100%';
 }
 
 function backToNormal(monster) {
@@ -166,15 +169,15 @@ function backToNormal(monster) {
 codeStatus = false;
 
 function showCode(action) {
-  propertyM.style.opacity = '0%'
-  durationM.style.opacity = '0%'
-  delayM.style.opacity = '0%'
-  timingM.style.opacity = '0%'
-  transformM.style.opacity = '0%'
-  aliveM.style.opacity = '0%'
-  transitioning.style.opacity = '0%'
-  framing.style.opacity = '0%'
-  transformer.style.opacity = '0%'
+  transformM.style.opacity = '0%';
+  durationM.style.opacity = '0%';
+  delayM.style.opacity = '0%';
+  timingM.style.opacity = '0%';
+  aliveM.style.opacity = '0%';
+  transitioning.style.opacity = '0%';
+  framing.style.opacity = '0%';
+  transformer.style.opacity = '0%';
+  propertyM.style.opacity = '0%';
 
   if (!codeStatus) {
     codeStatus = true;
