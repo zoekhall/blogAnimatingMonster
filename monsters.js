@@ -7,9 +7,7 @@ const transitioning = document.getElementById('transitionImg')
 const framing = document.getElementById('frameImg')
 const transformer = document.getElementById('transformImg')
 const propertyM = document.getElementById('propMonst')
-const allExamples = document.getElementById('codeEx')
 
-allExamples.style.opacity = '0%'
 transformM.style.opacity = '0%';
 durationM.style.opacity = '0%';
 delayM.style.opacity = '0%';
