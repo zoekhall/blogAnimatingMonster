@@ -33,12 +33,17 @@ const makeItAlive = function () {
     aliveness.play();
     aliveM.style.left = '100px'
     aliveM.style.animation = "slide-in-bottom 8s linear both";
+    setTimeout(() => backToNormal(aliveM), 9000)
+  } else {
+    frankStatus = false;
+    thunder.volume = 0.00;
+    aliveness.volume = 0.00;
   }
 }
 
 // BASIC TRANSFORMS//
 function transform(param) {
-  transformM.style.opacity = '0%';
+  transformM.style.opacity = '100%';
   durationM.style.opacity = '0%';
   delayM.style.opacity = '0%';
   timingM.style.opacity = '0%';
@@ -46,7 +51,7 @@ function transform(param) {
   transitioning.style.opacity = '0%';
   framing.style.opacity = '0%';
   transformer.style.opacity = '0%';
-  propertyM.style.opacity = '100%';
+  propertyM.style.opacity = '0%';
 
   if (param === 'skew') {
     transformM.style.transform = "skew(40deg, 40deg)";

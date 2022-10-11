@@ -166,8 +166,13 @@ button:hover {
     opacity: 100%
   }
 
-  100% {
+  90% {
     transform: translateY(0px);
+    opacity: 0%
+  }
+
+  100% {
+    transform: translateY(300px);
     opacity: 0%
   }
 }
